@@ -17,6 +17,45 @@ body {
   transition: color 150ms ease-out, background-color 150ms ease-out;
 }
 
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+
+}
+
+.description {
+  width: 800px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.container {
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.container__menu {
+  margin-top: 30px;
+}
+
+.description__title {
+  font-size: 50px;
+  margin-right: 40px;
+}
+
+.description__text {
+  margin-top: 40px;
+
+}
+
 body.light-theme {
   background-color: #fff;
   color: #333333;
@@ -26,6 +65,8 @@ body.dark-theme {
   background-color: #333333;
   color: #fff;
 }
+
+
 
 .toolbar {
   display: flex;
@@ -74,16 +115,16 @@ body.dark-theme {
   pointer-events: none;
 }
 
-.switch__input:checked + .switch__label {
+.switch__input:checked+.switch__label {
   background-color: #d3d3d4;
 }
 
-.switch__input:checked + .switch__label + .switch__marker {
+.switch__input:checked+.switch__label+.switch__marker {
   left: calc(100% - 29px);
 }
 
-.switch__input:focus + .switch__label,
-.switch__input:active + .switch__label {
+.switch__input:focus+.switch__label,
+.switch__input:active+.switch__label {
   box-shadow: 0 0 0 3px #2a6df433;
 }
 
@@ -95,7 +136,7 @@ body.dark-theme {
   background-color: #333;
   border-radius: inherit;
   z-index: 1;
-  transition: background-color 150ms;
+  transition: 150ms;
   cursor: pointer;
 }
 
@@ -135,6 +176,7 @@ body.dark-theme {
   justify-content: space-between;
   height: 100%;
   padding-bottom: 8px;
+  /* margin: 0 auto; */
 }
 
 .card__content {
@@ -142,6 +184,8 @@ body.dark-theme {
   flex-direction: column;
   padding: 8px;
   flex-grow: 1;
+  margin-left: 15px;
+
 }
 
 .card__image {
@@ -160,6 +204,7 @@ body.dark-theme {
 .card__descr {
   line-height: 1.5;
   flex-grow: 1;
+  width: 500px;
 }
 
 .card__price {
@@ -167,6 +212,7 @@ body.dark-theme {
   align-items: center;
   margin-top: 24px;
   font-size: 20px;
+  /* background-color: #2196f3; */
 }
 
 .card__price i {
@@ -186,6 +232,7 @@ body.dark-theme {
   margin-top: 16px;
   width: calc(100% - 16px);
 }
+
 
 .tag-list {
   display: flex;
@@ -218,7 +265,7 @@ body.dark-theme {
   font: inherit;
   font-weight: 500;
   user-select: none;
-  transition: background-color 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .button:hover {
